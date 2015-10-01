@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>HTML help</title>
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
   </head>
@@ -11,9 +12,18 @@
       <h1>HMTL help</h1>
 
       <p class="intro">This is a very special page. IF you click somewhere, it will tell type of HTML elements you clicked on.</p>
-
       <p>Look at this cute walrus!</p>
-      <img src="img/walrus.jpeg">
+
+
+      <div class="initially-hidden">
+        <p class="clickable">Show Image</p>
+      </div>
+
+      <div class="initially-showing">
+        <p class="clickable">Hide Image</p>
+        <img src="img/walrus.jpeg">
+      </div>
+
       <p>Characteristics of walruses:</p>
       <ul>
         <li>Walruses are cool</li>
