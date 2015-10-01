@@ -23,18 +23,21 @@ jQuery(document).ready(function() {
   $(".clickable1").click(function() {
     $(".initially-hidden").toggle();
     $(".initially-showing").toggle();
+
   })
 
 
  $(".clickable2").click(function() {
-   $(".initially-showing-to-fade").fadeOut();
-   $(".initially-hidden-to-fade").fadeIn();
-})
+  //  $(".initially-showing-to-fade").fadeOut();
+   $("ul").prepend("<li>Walruses are cool</li>");
+   $("li").css("background", "green");
+   $("ul").children("li").even().css("background", "red");
+});
 
-$(".clickable3").click(function() {
-  $(".initially-hidden-to-fade").fadeOut();
-  $(".initially-showing-to-fade").fadeIn();
-})
+// $(".clickable3").click(function() {
+//   $(".initially-hidden-to-fade").fadeOut();
+//   $(".initially-showing-to-fade").fadeIn();
+// })
 
 
 });
