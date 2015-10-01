@@ -20,12 +20,21 @@ jQuery(document).ready(function() {
   //   alert("This is a paragraph");
   // });
 
-  $(".clickable").click(function() {
+  $(".clickable1").click(function() {
     $(".initially-hidden").toggle();
     $(".initially-showing").toggle();
   })
 
 
+ $(".clickable2").click(function() {
+   $(".initially-showing-to-fade").fadeOut();
+   $(".initially-hidden-to-fade").fadeIn();
+})
+
+$(".clickable3").click(function() {
+  $(".initially-hidden-to-fade").fadeOut();
+  $(".initially-showing-to-fade").fadeIn();
+})
 
 
 });

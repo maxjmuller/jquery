@@ -2,11 +2,16 @@
   display: none;
 }
 
-.clickable {
+.clickable1,
+.clickable2 {
   color: blue;
   cursor: pointer;
 }
 
-.clickable:hover {
+.clickable1:hover, .clickable2:hover{
   text-decoration: underline;
+}
+
+.initially-hidden-to-fade {
+  display: none
 }
